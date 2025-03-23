@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <header id="navbar">
+    <button id="menu-toggle" class="hamburger">&#9776;</button> <!-- Hamburger button -->
+
+    <nav>
+      <a href="./index.html">Home</a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="./pages/dresses.html">Dresses</a>
+          <a href="./pages/jackets.html">Jackets</a>
+          <a href="./pages/shirts.html">Shirts</a>
+          <a href="./pages/trousers.html">Trousers</a>
+          <a href="./pages/skirts.html">Skirts</a>
+          <a href="./pages/bags.html">Bags</a>
+        </div>
+      </div>
+
+      
+
+      <a href="./pages/cart.html">Cart</a>
+      <a href="./pages/user-profile.html">Profile</a>
+      <a href="./pages/admin-dashboard.html" id="admin-dashboard-btn" style="display: none;">Admin Dashboard</a>
+
+      <!-- Authentication Links -->
+      <div class="auth-links">
+        <a href="./pages/login.html" id="login-btn">Login</a>
+        <a href="./pages/register.html" id="register-btn">Register</a>
+        <a href="#" id="logout-btn" class="hidden">Logout</a> 
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to UrbanVogue Store</h1>
+      <p>"Fashion fades, only style remains the same." – Coco Chanel      </p>
+      <a href="#shop-categories" class="btn">Shop Now</a>
+    </section>
+
+    <section id="shop-categories">
+      <h2>Shop by Category</h2>
+      <div class="shop-category-grid">
+        <div class="shop-category-item" onclick="window.location.href='./pages/dresses.html'">
+          <img src="./assets/images/dress.jpg" alt="Dresses" class="shop-category-image">
+          <div class="category-overlay">
+            <h3>Dresses</h3>
+          </div>
+        </div>
+        <div class="shop-category-item" onclick="window.location.href='./pages/jackets.html'">
+          <img src="./assets/images/jacket.jpg" alt="Jackets" class="shop-category-image">
+          <div class="category-overlay">
+            <h3>Jackets</h3>
+          </div>
+        </div>
+        <div class="shop-category-item" onclick="window.location.href='./pages/shirts.html'">
+          <img src="./assets/images/Shirts.jpg" alt="Shirts" class="shop-category-image">
+          <div class="category-overlay">
+            <h3>Shirts</h3>
+          </div>
+        </div>
+        <div class="shop-category-item" onclick="window.location.href='./pages/trousers.html'">
+          <img src="./assets/images/Trousers.jpg" alt="Trousers" class="shop-category-image">
+          <div class="category-overlay">
+            <h3>Trousers</h3>
+          </div>
+        </div>
+        <div class="shop-category-item" onclick="window.location.href='./pages/skirts.html'">
+          <img src="./assets/images/Skirts.jpg" alt="Skirts" class="shop-category-image">
+          <div class="category-overlay">
+            <h3>Skirts</h3>
+        </div>
+        </div>
+        <div class="shop-category-item" onclick="window.location.href='./pages/bags.html'">
+          <img src="./assets/images/Bags.jpg" alt="Bags" class="shop-category-image">
+          <div class="category-overlay">
+            <h3>Bags</h3>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 UrbanVogue Store. All rights reserved.</p>
+  </footer>
+
+  <script src="./assets/js/navbar.js"></script>
+</body>
+</html>
