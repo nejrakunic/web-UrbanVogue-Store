@@ -1,0 +1,10 @@
+{
+  "name": "urbanvogue/api",
+  "description": "UrbanVogueStore PHP REST API",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "App\\": "services/"
+    }
+  }
+}
