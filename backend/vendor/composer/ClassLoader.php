@@ -455,7 +455,13 @@ class ClassLoader
             return false;
         }
         if (null !== $this->apcuPrefix) {
+<<<<<<< HEAD
             $file = apcu_fetch($this->apcuPrefix.$class, $hit);
+=======
+            $hit = false;
+            $file = apcu_fetch($this->apcuPrefix.$class, $hit);
+
+>>>>>>> 737ba28 (Dodani fajlovi za milestone 3)
             if ($hit) {
                 return $file;
             }
